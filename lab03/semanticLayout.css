@@ -1,0 +1,57 @@
+/* name: 이주원   id: 2013043359  year: 3 */
+
+html {
+    background-image: url('http://selab.hanyang.ac.kr/courses/cse326/2017/labs/images/3/blueTextureBG.jpg'); 
+    background-repeat: repeat;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#overall { 
+    border: 10px solid white;
+    background-color: white;
+    overflow: hidden;
+}
+
+header {
+    text-align: right;
+    background-color: #1D2475;
+    color: white;
+}
+
+#fields {
+    font-size: 14pt;
+    color: #CCCCCC;
+}
+
+#link {
+    float: left;
+    border: 4px solid #1D2475;
+    background-color: #3366CC;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 10px; 
+    width: 150px;
+}
+
+#sections {
+    float: right;
+    width: calc(100% - 180px);
+    margin-left: 10px;
+}
+
+.detail {
+    border: 4px solid #1D2475;
+    background-color: #99CCFF;
+    padding: 5px; margin-top: 10px;
+    font-stretch: semi-expanded;
+    overflow: hidden;
+    text-align: justify;
+    border-radius: 15px;
+}
+
+.field { border-bottom: 2px dashed blue; }
+
+.picture { float: right; }
+
+#overall *:hover:not(article):not(section):not(header):not(aside):not(div) { background-color: #A6CE39; }

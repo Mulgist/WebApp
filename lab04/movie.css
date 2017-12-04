@@ -1,0 +1,152 @@
+/* 2013043359 이주원 */
+
+body {
+    background-image: url('background.png');
+    background-repeat: repeat;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    padding: 0px;
+    margin: 0px;
+ }
+
+ #banner {
+    height: 50px;
+    background-image: url('bannerbg.png');
+    background-size: auto 50px;
+    background-repeat: repeat-x;
+}
+
+#banner img {
+    display: block;
+    height: 50px;
+    max-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+}
+
+#contents {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#biglogo {
+    float: left;
+    width: 550px;
+    height: 83px;
+    background-image: url('rbg.png');
+    background-repeat: repeat-x;
+    background-size: auto 83px;
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+}
+
+#biglogo img {
+    vertical-align: bottom;
+    height: 83px;
+}
+
+#biglogo span {
+    line-height: 83px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#reviews {
+    float: left;
+    width: 550px;
+}
+
+#left_column {
+    float: left;
+    width: 47%;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+ 
+#right_column {
+    float: right;
+    width: 47%;
+    margin-left: 1%;
+    margin-right: 2%;
+ }
+
+p.comment {
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+    overflow: hidden;
+ }
+
+p.user {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+p.user span {
+    font-style: italic;
+}
+
+#reviews img {
+    float: left;
+    margin-right: 5px;
+}
+
+#overview {
+    float: right;
+    width: 250px;
+    height: auto;
+    background-color: #A2B964;
+    /* position: relative; */
+    z-index: 2;
+}
+
+#overview dl {
+    padding: 10px;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+
+#overview dt { font-weight: bold; }
+
+#overview dd { margin-bottom: 10px; }
+
+#overview ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#page_num {
+    position: absolute;
+    bottom: 0px;
+    background-color: #A2B964;
+    padding: 5px;
+    z-index: 1;
+    width: 800px;
+    text-align: center;
+}
+
+#validators {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+#validators img { opacity: 0.5; }
