@@ -31,13 +31,30 @@ if (!file_exists($BOOKS_FILE)) {
 
 header("Content-type: application/json");
 
-print "{\n  \"books\": [\n";
+$json = "";
 
-// write a code to : 
+$json .= "{\n  \"books\": [\n";
+
+// write a code to :
 // 1. read the "books.txt"
-// 2. search all the books that matches the given category 
-// 3. generate the result in JSON data format 
+$lines = file($BOOKS_FILE);
 
-print "  ]\n}\n";
+// 2. search all the books that matches the given category
+for ($i = 0; $i < count($lines); $i++) {
+	list($title, $author, $book_category, $year, $price) = explode("|", trim($lines[$i]));
+	if ($book_category == $category) {
+		// 3. generate the result in JSON data format
+		$json .= "    {\"category\": \"$category\", ";
+		$json .= "\"title\": \"$title\", ";
+		$json .= "\"author\": \"$author\", ";
+		$json .= "\"year\": $year, ";
+		$json .= "\"price\": $price},\n";
+	}
+}
 
+$json = substr($json, 0, strlen($json) - 2);
+$json .= "\n";
+$json .= "  ]\n}\n";
+
+print $json;
 ?>
